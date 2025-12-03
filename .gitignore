@@ -1,0 +1,18 @@
+# raw data
+data/raw/*.fastq
+data/raw/*.fastq.gz
+
+# processed intermediate files
+data/processed/*.bam
+data/processed/*.sam
+data/processed/*.mpileup
+data/processed/*.bai
+
+# results
+results/**/*.vcf
+results/**/*.tsv
+results/**/*.xlsx
+
+# system
+.DS_Store
+.ipynb_checkpoints/
