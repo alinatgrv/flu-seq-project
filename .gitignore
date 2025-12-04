@@ -1,18 +1,26 @@
-# raw data
-data/raw/*.fastq
-data/raw/*.fastq.gz
-
-# processed intermediate files
-data/processed/*.bam
-data/processed/*.sam
-data/processed/*.mpileup
-data/processed/*.bai
-
-# results
-results/**/*.vcf
-results/**/*.tsv
-results/**/*.xlsx
-
-# system
 .DS_Store
-.ipynb_checkpoints/
+*.swp
+*.swo
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Raw sequencing data (SRA fastq)
+data/raw/SRR*.fastq.gz
+
+# BWA index files 
+data/raw/KF848938.1.fasta.amb
+data/raw/KF848938.1.fasta.ann
+data/raw/KF848938.1.fasta.bwt
+data/raw/KF848938.1.fasta.pac
+data/raw/KF848938.1.fasta.sa
+
+# Processed alignment data
+data/processed/*.bam
+data/processed/*.bam.bai
+data/processed/*.mpileup
+
+# Temporary / auxiliary files
+*.log
+depth.txt
